@@ -16,6 +16,22 @@ namespace medicamentos.Migrations
                 .HasAnnotation("ProductVersion", "1.1.2")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("medicamentos.Models.Composicao", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("MedicamentoId");
+
+                    b.Property<string>("Nome");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MedicamentoId");
+
+                    b.ToTable("Composicoes");
+                });
+
             modelBuilder.Entity("medicamentos.Models.Medicacao", b =>
                 {
                     b.Property<int>("Id")
@@ -47,8 +63,6 @@ namespace medicamentos.Migrations
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Composicao");
-
                     b.Property<string>("Nome");
 
                     b.Property<int>("UnidadeId");
@@ -58,14 +72,34 @@ namespace medicamentos.Migrations
                     b.ToTable("Medicamentos");
                 });
 
+            modelBuilder.Entity("medicamentos.Models.Medico", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("CRM");
+
+                    b.Property<string>("Cpf");
+
+                    b.Property<int>("Idade");
+
+                    b.Property<string>("Nome");
+
+                    b.Property<string>("Senha");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Médicos");
+                });
+
             modelBuilder.Entity("medicamentos.Models.Receita", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Autor");
-
                     b.Property<DateTime>("Dataehora");
+
+                    b.Property<int>("MedicoId");
 
                     b.Property<int>("UsuarioId");
 
@@ -73,7 +107,7 @@ namespace medicamentos.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("Receita");
+                    b.ToTable("Receitas");
                 });
 
             modelBuilder.Entity("medicamentos.Models.Unidade", b =>
@@ -104,6 +138,13 @@ namespace medicamentos.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("medicamentos.Models.Composicao", b =>
+                {
+                    b.HasOne("medicamentos.Models.Medicamento")
+                        .WithMany("Composicao")
+                        .HasForeignKey("MedicamentoId");
                 });
 
             modelBuilder.Entity("medicamentos.Models.Medicacao", b =>

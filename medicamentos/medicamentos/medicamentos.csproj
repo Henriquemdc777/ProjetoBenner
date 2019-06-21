@@ -221,6 +221,8 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DAO\ComposicaoDAO.cs" />
+    <Compile Include="DAO\MedicamentoDAO.cs" />
     <Compile Include="DAO\MedicamentosContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -237,10 +239,16 @@
     <Compile Include="Migrations\20190616160127_3.designer.cs">
       <DependentUpon>20190616160127_3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20190619191326_4.cs" />
+    <Compile Include="Migrations\20190619191326_4.designer.cs">
+      <DependentUpon>20190619191326_4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\MedicamentosContextModelSnapshot.cs" />
-    <Compile Include="Models\medicacao.cs" />
+    <Compile Include="Models\Composicao.cs" />
+    <Compile Include="Models\Medicacao.cs" />
     <Compile Include="Models\Medicamento.cs" />
-    <Compile Include="Models\receita.cs" />
+    <Compile Include="Models\Medico.cs" />
+    <Compile Include="Models\Receita.cs" />
     <Compile Include="Models\Unidade.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
