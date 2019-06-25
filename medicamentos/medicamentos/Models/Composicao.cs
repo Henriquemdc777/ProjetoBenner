@@ -8,6 +8,7 @@ namespace medicamentos.Models
     public class Composicao
     {
         public string Nome { get; set; }
+        public string Percentual { get; set; }
         public int Id { get; set; }
     }
 }

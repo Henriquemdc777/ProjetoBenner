@@ -11,7 +11,7 @@ namespace medicamentos.Models
         public string Nome { get; set; }
         public string Cpf { get; set; }
         public int CRM { get; set; }
-        public int Idade { get; set; }
+        public DateTime Datanasc { get; set; }
         public string Senha { get; set; }
     }
 }
