@@ -13,7 +13,7 @@ namespace medicamentos.Models
         public DbSet<Medicamento> Medicamentos { get; set; }
         public DbSet<Unidade> Unidades { get; set; }
         public DbSet<Composicao> Composicoes { get; set; }
-        public DbSet<Medico> Médicos { get; set; }
+        public DbSet<Medico> Medicos { get; set; }
         public DbSet<Receita> Receitas { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

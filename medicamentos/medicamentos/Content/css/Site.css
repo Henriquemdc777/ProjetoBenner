@@ -1,0 +1,45 @@
+﻿.header {
+    width: 100%;
+    background-color: rgb(0, 255, 144);
+    height: 104px;
+    border-bottom: 2px solid #0094ff;
+}
+
+.nav {
+    margin: 30px;
+}
+
+#logo {
+    width: 180px;
+    height: 90px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 2px solid #0094ff;
+    border-radius: 2px;
+    float: left;
+}
+
+    #logo img {
+        width: 176px;
+        height: 86px;
+        border-radius: 2px;
+    }
+
+body {
+    background-image: url(../wallpaper2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.agenda {
+    width: 30%;
+    min-height: 50px;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.table {
+    background-color: #0094ff;
+    border-radius: 5px;
+}
+

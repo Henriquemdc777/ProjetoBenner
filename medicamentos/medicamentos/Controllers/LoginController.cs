@@ -11,7 +11,7 @@ namespace medicamentos.Controllers
     public class LoginController : Controller
     {
         // GET: Login
-        public ActionResult Index()
+        public ActionResult Negado()
         {
             return View();
         }

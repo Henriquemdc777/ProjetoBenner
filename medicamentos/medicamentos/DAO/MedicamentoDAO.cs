@@ -8,11 +8,11 @@ namespace medicamentos.DAO
 {
     public class MedicamentoDAO
     {
-        public void Adicionar(Medicamento comp)
+        public void Adicionar(Medicamento aux)
         {
             using (var contexto = new MedicamentosContext())
             {
-                contexto.Medicamentos.Add(comp);
+                contexto.Medicamentos.Add(aux);
                 contexto.SaveChanges();
             }
         }
@@ -42,5 +42,4 @@ namespace medicamentos.DAO
             }
         }
     }
-}
 }
