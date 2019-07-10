@@ -5,25 +5,21 @@
     border-bottom: 2px solid #0094ff;
 }
 
-.nav {
-    margin: 30px;
-}
-
 #logo {
     width: 180px;
     height: 90px;
     margin-top: 5px;
     margin-left: 5px;
     border: 2px solid #0094ff;
-    border-radius: 2px;
+    border-radius: 5px;
     float: left;
 }
 
-    #logo img {
-        width: 176px;
-        height: 86px;
-        border-radius: 2px;
-    }
+#logo img {
+    width: 176px;
+    height: 86px;
+    border-radius: 2px;
+}
 
 body {
     background-image: url(../wallpaper2.jpg);
@@ -41,5 +37,8 @@ body {
 .table {
     background-color: #0094ff;
     border-radius: 5px;
+}
+.nav{
+    float:right;
 }
 
