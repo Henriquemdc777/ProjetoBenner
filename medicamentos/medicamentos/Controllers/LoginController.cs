@@ -11,7 +11,7 @@ namespace medicamentos.Controllers
     public class LoginController : Controller
     {
         // GET: Login
-        public ActionResult Negado()
+        public ActionResult Index()
         {
             return View();
         }
@@ -22,7 +22,7 @@ namespace medicamentos.Controllers
             if (usuario != null)
             {
                 Session["usuarioLogado"] = usuario;
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Medico", "Home");
             }
             else
             {

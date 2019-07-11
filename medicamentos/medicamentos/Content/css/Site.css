@@ -6,17 +6,17 @@
     min-width:1000px;
 }
 .header {
-    background-color: #0e8c05;
-    padding:5px;
-    border-bottom:3px solid #26336f;
-    min-height:8%;
+    background-color: #5f72e5;
+    padding: 5px;
+    border-bottom: 3px solid #26336f;
+    min-height: 8%;
 }
 .agenda {
     width: 30%;
     min-height: 50px;
     margin-top: 4%;
     margin-left: 5%;
-    text-align:center;
+    text-align: center;
 }
 
 .table {
@@ -42,16 +42,17 @@ footer {
     padding:15px;
 }
 .menu-lateral button {
-    background-color: aquamarine;
-    margin-top:20px;
-    display:block;
-    margin:auto;
-    margin-top:20px;
+    background-color: rgba(165, 225, 214, 1);
+    margin-left:5%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width:90%;
 }
 .conteudo {
     width: 80%;
     height: 82%;
-    background-color: rgba(7, 73, 40, 0.62);
+    background-color: rgba(165, 225, 214, 0.60);
     float: left;
     margin: 2%;
     border-radius: 15px;

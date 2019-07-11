@@ -59,22 +59,42 @@
 </div>
 
 <div class="conteudo">
-    <div class="agenda">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Paciente</th>
-                    <th>Horário</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>paciente 1</th>
-                    <th>00:00</th>
-                </tr>
-            </tbody>
-        </table>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" 
+                role="tab" aria-controls="home" aria-selected="true">
+                Agenda</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="agenda">
+                <table class="table bg-light" style="background-color:#467cd0;">
+                    <thead>
+                        <tr>
+                            <th>Paciente</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>paciente 1</th>
+                            <th>00:00</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
     </div>
+    
 </div>
 
 
@@ -88,7 +108,17 @@
                 <h4 class="modal-title" id="myModalLabel">Modal title</h4>
             </div>
             <div class="modal-body">
-                ...
+                <div>
+                    <form class="form-signin">
+                        <img class="mb-4" src="./Signin Template · Bootstrap_files/bootstrap-solid.svg" alt="" width="72" height="72">
+                        <h1 class="h3 mb-3 font-weight-normal text-center">Lorem Ipsum Dolor</h1>
+                        <label for="inputEmail" class="sr-only text-center">Email address</label>
+                        <input type="email" id="inputEmail" class="form-control" required="" autofocus="">
+                        <label for="inputPassword" class="sr-only text-center">Password</label>
+                        <input type="password" id="inputPassword" class="form-control"  required="">
+                        <p class="mt-5 mb-3 text-muted">© 2017-2019</p>
+                    </form>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

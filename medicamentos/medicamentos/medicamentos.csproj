@@ -244,6 +244,7 @@
     <Compile Include="DAO\MedicamentosContext.cs" />
     <Compile Include="DAO\MedicoDAO.cs" />
     <Compile Include="DAO\ReceitaDAO.cs" />
+    <Compile Include="DAO\SecertariaDAO.cs" />
     <Compile Include="DAO\UsuarioDAO.cs" />
     <Compile Include="Filtros\AutorizacaoFilterAttribute.cs" />
     <Compile Include="Filtros\AutorizationFilter2Attribute.cs" />
@@ -268,10 +269,12 @@
     </Compile>
     <Compile Include="Migrations\MedicamentosContextModelSnapshot.cs" />
     <Compile Include="Models\Composicao.cs" />
+    <Compile Include="Models\Endereco.cs" />
     <Compile Include="Models\Medicacao.cs" />
     <Compile Include="Models\Medicamento.cs" />
     <Compile Include="Models\Medico.cs" />
     <Compile Include="Models\Receita.cs" />
+    <Compile Include="Models\Secretaria.cs" />
     <Compile Include="Models\Unidade.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

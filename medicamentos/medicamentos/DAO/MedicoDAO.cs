@@ -41,5 +41,12 @@ namespace medicamentos.DAO
                 contexto.SaveChanges();
             }
         }
+        public Medico Busca(string CPF, string senha)
+        {
+            using (var contexto = new MedicamentosContext())
+            {
+                return contexto.Medicos.FirstOrDefault(u => u.Cpf == CPF && u.Senha == senha);
+            }
+        }
     }
 }
