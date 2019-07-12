@@ -12,11 +12,11 @@ namespace medicamentos.Models
         public DbSet<Medicacao> Medicacoes { get; set; }
         public DbSet<Medicamento> Medicamentos { get; set; }
         public DbSet<Unidade> Unidades { get; set; }
-        public DbSet<Composicao> Composicoes { get; set; }
         public DbSet<Medico> Medicos { get; set; }
         public DbSet<Receita> Receitas { get; set; }
+        public DbSet<Secretaria> Secretarias { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
 //            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Medicamentos;Trusted_Connection=true;");
 

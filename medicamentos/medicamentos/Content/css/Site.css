@@ -2,7 +2,7 @@
     background-image: url(../wallpaper2.jpg);
     background-position: center;
     background-attachment: fixed;
-    height:1080px;
+    height:1000px;
     min-width:1000px;
 }
 .header {
@@ -14,8 +14,6 @@
 .agenda {
     width: 30%;
     min-height: 50px;
-    margin-top: 4%;
-    margin-left: 5%;
     text-align: center;
 }
 
@@ -30,16 +28,24 @@
     display:block;
     float:left;
 }
+nav ul li .nav-link{
+    font-size:150%;
+}
 .nav-item{
     text-align:center;
 }
-footer {
-    background-color: #0e8c05;
+.nav-link:active {
+    background-color: rgba(4, 82, 198, 0.6);
+}
+.footer {
+    background-color:rgba(4, 82, 198, 1);
     color:white;
     height:5%;
     width:100%;
     float:left;
-    padding:15px;
+    padding:10px;
+    position:fixed;
+    bottom:0;
 }
 .menu-lateral button {
     background-color: rgba(165, 225, 214, 1);
@@ -57,9 +63,6 @@ footer {
     margin: 2%;
     border-radius: 15px;
 }
- .nav-link {
-    font-size: 150%;
-}
 .nav-link:hover {
     color: white;
     
@@ -76,4 +79,29 @@ footer {
     margin-left: 25px;
     width:25%;
     height:10%;
+}
+#Agenda{
+    height:90%;
+}
+.tab-conteudo{
+    height:90%;
+    width:100%;
+    padding:20px;
+    background-color:rgba(4, 82, 198, 0.6);
+}
+.login{
+    width:400px;
+    margin:auto;
+    margin-top:20%;
+    background-color:rgba(4, 82, 198, 0.5);
+    padding:10px;
+    border-radius:5px;
+    border:1px solid blue;
+}
+.login img{
+    width:240px;
+    height:120px;
+    border:3px solid blue;
+    border-radius:10px;
+    margin-left:77px;
 }

@@ -239,12 +239,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="DAO\ComposicaoDAO.cs" />
     <Compile Include="DAO\MedicamentoDAO.cs" />
     <Compile Include="DAO\MedicamentosContext.cs" />
     <Compile Include="DAO\MedicoDAO.cs" />
     <Compile Include="DAO\ReceitaDAO.cs" />
-    <Compile Include="DAO\SecertariaDAO.cs" />
+    <Compile Include="DAO\SecretariaDAO.cs" />
     <Compile Include="DAO\UsuarioDAO.cs" />
     <Compile Include="Filtros\AutorizacaoFilterAttribute.cs" />
     <Compile Include="Filtros\AutorizationFilter2Attribute.cs" />
@@ -268,7 +267,6 @@
       <DependentUpon>20190619191326_4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\MedicamentosContextModelSnapshot.cs" />
-    <Compile Include="Models\Composicao.cs" />
     <Compile Include="Models\Endereco.cs" />
     <Compile Include="Models\Medicacao.cs" />
     <Compile Include="Models\Medicamento.cs" />

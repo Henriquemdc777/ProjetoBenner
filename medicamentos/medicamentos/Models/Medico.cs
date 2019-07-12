@@ -16,7 +16,5 @@ namespace medicamentos.Models
         public string Descricao { get; set; }
         public string Especialidade { get; set; }
         public int EnderecoId { get; set; }
-
-
     }
 } 

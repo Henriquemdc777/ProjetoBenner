@@ -9,7 +9,7 @@ namespace medicamentos.Models
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public IList<Composicao> Composicao { get; set; }
+        public string Descricao { get; set; }
         public int UnidadeId { get; set; }
     }
 }
