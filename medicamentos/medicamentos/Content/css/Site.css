@@ -92,7 +92,7 @@ nav ul li .nav-link{
 .login{
     width:400px;
     margin:auto;
-    margin-top:20%;
+    margin-top:auto;
     background-color:rgba(4, 82, 198, 0.5);
     padding:10px;
     border-radius:5px;

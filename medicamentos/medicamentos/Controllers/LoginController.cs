@@ -10,14 +10,26 @@ namespace medicamentos.Controllers
 {
     public class LoginController : Controller
     {
+
         // GET: Login
         public ActionResult Index()
         {
             return View();
         }
-        public ActionResult Cadastro()
+        public ActionResult Cadastro(String Nome, String CPF, String senha, DateTime datanasc)
         {
-            return View();
+            UsuarioDAO dao = new UsuarioDAO();
+            Usuario usuario = new Usuario();
+            usuario.Cpf = CPF;
+            usuario.Senha = senha;
+            usuario.Nome = Nome;
+            usuario.Datanasc = datanasc;
+            dao.Adicionar(usuario);
+            return RedirectToAction("CadastroEndereco");
+        }
+        public ActionResult CadastroEndereco (String CPF, String senha)
+        {
+            return RedirectToAction("Index");
         }
         public ActionResult Autentica(String CPF, String senha)
         {
@@ -46,10 +58,7 @@ namespace medicamentos.Controllers
             {
                 return RedirectToAction("index", "login");
             }
-            public ActionResult Cadastrousuario()
-            {
-                
-            }
+        
         }
     }
 }

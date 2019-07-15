@@ -8,9 +8,10 @@ using medicamentos.Models;
 namespace medicamentos.Migrations
 {
     [DbContext(typeof(MedicamentosContext))]
-    partial class MedicamentosContextModelSnapshot : ModelSnapshot
+    [Migration("20190715180238_5")]
+    partial class _5
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")

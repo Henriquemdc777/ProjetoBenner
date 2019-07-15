@@ -266,6 +266,10 @@
     <Compile Include="Migrations\20190619191326_4.designer.cs">
       <DependentUpon>20190619191326_4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20190715180238_5.cs" />
+    <Compile Include="Migrations\20190715180238_5.designer.cs">
+      <DependentUpon>20190715180238_5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\MedicamentosContextModelSnapshot.cs" />
     <Compile Include="Models\Endereco.cs" />
     <Compile Include="Models\Medicacao.cs" />
