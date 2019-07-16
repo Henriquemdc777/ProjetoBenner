@@ -1,9 +1,9 @@
 ﻿<form class="form-signin login " action="/Login/Autentica" method="post">
     <img src="~/Content/benner.png" alt="Benner Life@Live" />
     <h1 class="h3 mb-3 text-center font-weight-normal">Entre</h1>
-    <label for="inputEmail" class="sr-only">CPF</label>
+    <label for="Cpf" class="sr-only">CPF</label>
     <input type="email" id="inputEmail" class="form-control" placeholder="CPF" required autofocus>
-    <label for="inputPassword" class="sr-only">Senha</label>
+    <label for="senha" class="sr-only">Senha</label>
     <input type="password" id="inputPassword" class="form-control mt-3" placeholder="Senha" required>
     <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">Entrar</button>
     <a data-toggle="modal" class = "nav-link" data-target="#ModalCadastro" style = "color:blue; text-align:center;">Cadastre-se</a>
@@ -24,7 +24,14 @@
                 <input type="email" id="inputEmail" class="form-control" placeholder="CPF" required autofocus>
                 <label for="inputPassword" class="sr-only">Senha</label>
                 <input type="password" id="inputPassword" class="form-control mt-3" placeholder="Senha" required>
-                <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">Entrar</button>
+                <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">Cadastrar</button>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="text" class="form-control" placeholder="name@example.com">
+                        
+                    </div>
+                </form>    
             </div>
             <div class="modal-footer">
             </div>
