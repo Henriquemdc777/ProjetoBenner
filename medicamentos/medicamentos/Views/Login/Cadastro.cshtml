@@ -1,0 +1,144 @@
+﻿<div id="centro-cadastro">
+    <div id="perfis-label">Cadastrar como</div>
+    <div class="bloco-cadastro" data-toggle="modal" data-target="#UsuarioModal" style="background-color: rgba(11, 238, 182, 0.83);"><div class="perfil-cadastro">Usuário</div></div>
+    <div class="bloco-cadastro" data-toggle="modal" data-target="#MedicoModal" style="background-color: rgb(26, 125, 174);"><div class="perfil-cadastro">Médico</div></div>
+    <div class="bloco-cadastro" data-toggle="modal" data-target="#SecretariaModal" style="background-color: rgb(185, 55, 237);"><div class="perfil-cadastro">Secretária</div></div>
+</div>
+
+<div class="modal fade" id="UsuarioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title ml-2" id="exampleModalCenterTitle">Novo Usuário</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-signin" action="/Login/CadastroUsuario" method="post">
+
+                    <div class="form-group">
+                        <label for="Nome">Nome Completo</label>
+                        <input type="text" class="form-control" id="Nome">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="senha">Senha</label>
+                            <input type="password" class="form-control" id="senha" placeholder="Senha">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="senha2">Confirmar senha</label>
+                            <input type="password" class="form-control" id="senha2" placeholder="Senha">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="Cpf">CPF</label>
+                            <input type="text" class="form-control" id="CPF" placeholder="CPF">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="datanasc">Data de nascimento</label>
+                            <input type="date" class="form-control" id="datanasc">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-8">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" id="endereco" placeholder="Logradouro">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="Cep">CEP</label>
+                            <input type="text" class="form-control" id="Cep" placeholder="CEP">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" class="form-control" id="cidade">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="estado">Estado</label>
+                            <select id="Estado" class="form-control">
+                                <option selected>Selecione</option>
+                                <option>Rio Grande do Sul</option>
+                                <option>Santa Catarina</option>
+                                <option>Paraná</option>
+                                <option>São Paulo</option>
+                                <option>Minas Gerais</option>
+                                <option>Mato Grosso do Sul</option>
+                                <option>Rio de Janeiro</option>
+                                <option>Espírito Santo</option>
+                                <option>Goiás</option>
+                                <option>Mato Grosso</option>
+                                <option>Bahia</option>
+                                <option>Tocantins</option>
+                                <option>Rondônia</option>
+                                <option>Piauí</option>
+                                <option>Maranhão</option>
+                                <option>Ceará</option>
+                                <option>Rio Grande do Norte</option>
+                                <option>Paraíba</option>
+                                <option>Pernambuco</option>
+                                <option>Alagoas</option>
+                                <option>Sergipe</option>
+                                <option>Pará</option>
+                                <option>Amapá</option>
+                                <option>Roraima</option>
+                                <option>Amazonas</option>
+                                <option>Acre</option>
+                                <option>Distrito Federal</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="num">Número</label>
+                            <input type="number" class="form-control" id="num">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="MedicoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="SecretariaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>

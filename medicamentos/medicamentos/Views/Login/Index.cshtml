@@ -6,35 +6,6 @@
     <label for="senha" class="sr-only">Senha</label>
     <input type="password" id="inputPassword" class="form-control mt-3" placeholder="Senha" required>
     <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">Entrar</button>
-    <a data-toggle="modal" class = "nav-link" data-target="#ModalCadastro" style = "color:blue; text-align:center;">Cadastre-se</a>
+    @Html.ActionLink("Cadastre-se", "Cadastro", "Login", new object { }, new { @class = "nav-link", @style = "color:blue; text-align:center;" })
     <p class="mt-5 mb-3 text-center text-muted">&copy; Benner</p>
 </form>
-
-<div class="modal fade" id="ModalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Crie sua conta no Live&life</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <label for="inputEmail" class="sr-only">CPF</label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="CPF" required autofocus>
-                <label for="inputPassword" class="sr-only">Senha</label>
-                <input type="password" id="inputPassword" class="form-control mt-3" placeholder="Senha" required>
-                <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">Cadastrar</button>
-                <form>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Email address</label>
-                        <input type="text" class="form-control" placeholder="name@example.com">
-                        
-                    </div>
-                </form>    
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div>

@@ -294,6 +294,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Login\Negado.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Login\Cadastro.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
