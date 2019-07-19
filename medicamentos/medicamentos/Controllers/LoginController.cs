@@ -20,47 +20,13 @@ namespace medicamentos.Controllers
         {
             return View();
         }
-        public ActionResult CadastroUsuario(String Nome, String CPF, String senha, DateTime datanasc)
+        public ActionResult CadastroUsuario(Usuario usuario)
         {
             MedicamentosContext contexto = new MedicamentosContext();
-            UsuarioDAO dao = new UsuarioDAO();
-            Usuario usuario = new Usuario();
-            usuario.Cpf = CPF;
-            usuario.Senha = senha;
-            usuario.Nome = Nome;
-            usuario.Datanasc = datanasc.Date;
-            dao.Adicionar(usuario);
+            UsuarioDAO usuarioDAO = new UsuarioDAO();
+            usuarioDAO.Adicionar(usuario);
             contexto.SaveChanges();
-            return RedirectToAction("Login");
-        }
-        public ActionResult CadastroMedico(String Nome, String CPF, String senha, DateTime datanasc, int CRM, string Desc, string Esp)
-        {
-            MedicamentosContext contexto = new MedicamentosContext();
-            MedicoDAO dao = new MedicoDAO();
-            Medico medico = new Medico();
-            medico.Cpf = CPF;
-            medico.Senha = senha;
-            medico.Nome = Nome;
-            medico.Datanasc = datanasc;
-            medico.Crm = CRM;
-            medico.Descricao = Desc;
-            medico.Especialidade = Esp;
-            dao.Adicionar(medico);
-            contexto.SaveChanges();
-            return RedirectToAction("CadastroEndereco");
-        }
-        public ActionResult CadastroSecretaria(String Nome, String CPF, String senha, DateTime datanasc)
-        {
-            MedicamentosContext contexto = new MedicamentosContext();
-            SecretariaDAO dao = new SecretariaDAO();
-            Secretaria secretaria = new Secretaria();
-            secretaria.Cpf = CPF;
-            secretaria.Senha = senha;
-            secretaria.Nome = Nome;
-            secretaria.Datanasc = datanasc;
-            dao.Adicionar(secretaria);
-            contexto.SaveChanges();
-            return RedirectToAction("CadastroEndereco");
+            return RedirectToAction("index");
         }
         
         public ActionResult Autentica(String CPF, String senha)

@@ -1,10 +1,10 @@
 ﻿<form class="form-signin login " action="/Login/Autentica" method="post">
     <img src="~/Content/benner.png" alt="Benner Life@Live" />
     <h1 class="h3 mb-3 text-center font-weight-normal">Entre</h1>
-    <label for="Cpf" class="sr-only">CPF</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="CPF" required autofocus>
+    <label for="CPF" class="sr-only">CPF</label>
+    <input type="text" name="CPF" class="form-control" placeholder="CPF" required autofocus>
     <label for="senha" class="sr-only">Senha</label>
-    <input type="password" id="inputPassword" class="form-control mt-3" placeholder="Senha" required>
+    <input type="password" name="senha" class="form-control mt-3" placeholder="Senha" required>
     <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">Entrar</button>
     @Html.ActionLink("Cadastre-se", "Cadastro", "Login", new object { }, new { @class = "nav-link", @style = "color:blue; text-align:center;" })
     <p class="mt-5 mb-3 text-center text-muted">&copy; Benner</p>

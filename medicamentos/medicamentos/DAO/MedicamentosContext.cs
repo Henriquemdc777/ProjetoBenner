@@ -16,9 +16,9 @@ namespace medicamentos.Models
         public DbSet<Receita> Receitas { get; set; }
         public DbSet<Secretaria> Secretarias { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-//            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Medicamentos;Trusted_Connection=true;");
+//          optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=Medicamentos;Trusted_Connection=true;");
 
             optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB; Initial Catalog = Medicamentos; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
         }

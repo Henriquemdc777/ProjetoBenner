@@ -63,9 +63,9 @@ namespace medicamentos.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("CRM");
-
                     b.Property<string>("Cpf");
+
+                    b.Property<int>("Crm");
 
                     b.Property<DateTime>("Datanasc");
 
@@ -141,13 +141,15 @@ namespace medicamentos.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Cep");
+
                     b.Property<string>("Cpf");
 
                     b.Property<DateTime>("Datanasc");
 
-                    b.Property<int>("EnderecoId");
-
                     b.Property<string>("Nome");
+
+                    b.Property<int>("Numero");
 
                     b.Property<string>("Senha");
 

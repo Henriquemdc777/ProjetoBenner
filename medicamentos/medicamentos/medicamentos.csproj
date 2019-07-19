@@ -250,28 +250,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20190616154830_inicial.cs" />
-    <Compile Include="Migrations\20190616154830_inicial.designer.cs">
-      <DependentUpon>20190616154830_inicial.cs</DependentUpon>
+    <Compile Include="Migrations\20190719192110_inicial.cs" />
+    <Compile Include="Migrations\20190719192110_inicial.designer.cs">
+      <DependentUpon>20190719192110_inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20190616155115_2.cs" />
-    <Compile Include="Migrations\20190616155115_2.designer.cs">
-      <DependentUpon>20190616155115_2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190616160127_3.cs" />
-    <Compile Include="Migrations\20190616160127_3.designer.cs">
-      <DependentUpon>20190616160127_3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190619191326_4.cs" />
-    <Compile Include="Migrations\20190619191326_4.designer.cs">
-      <DependentUpon>20190619191326_4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\20190715180238_5.cs" />
-    <Compile Include="Migrations\20190715180238_5.designer.cs">
-      <DependentUpon>20190715180238_5.cs</DependentUpon>
+    <Compile Include="Migrations\20190719200159_1.cs" />
+    <Compile Include="Migrations\20190719200159_1.designer.cs">
+      <DependentUpon>20190719200159_1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\MedicamentosContextModelSnapshot.cs" />
-    <Compile Include="Models\Endereco.cs" />
     <Compile Include="Models\Medicacao.cs" />
     <Compile Include="Models\Medicamento.cs" />
     <Compile Include="Models\Medico.cs" />

@@ -19,82 +19,53 @@
 
                     <div class="form-group">
                         <label for="Nome">Nome Completo</label>
-                        <input type="text" class="form-control" id="Nome">
+                        <input type="text" class="form-control" name="usuario.Nome">
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="senha">Senha</label>
-                            <input type="password" class="form-control" id="senha" placeholder="Senha">
+                            <input type="password" class="form-control" name="usuario.Senha" placeholder="Senha">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="senha2">Confirmar senha</label>
-                            <input type="password" class="form-control" id="senha2" placeholder="Senha">
+                            <input type="password" class="form-control" name="senha2" placeholder="Senha">
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="Cpf">CPF</label>
-                            <input type="text" class="form-control" id="CPF" placeholder="CPF">
+                            <input type="text" class="form-control" name="usuario.Cpf" placeholder="CPF">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="datanasc">Data de nascimento</label>
-                            <input type="date" class="form-control" id="datanasc">
+                            <input type="date" class="form-control" name="usuario.Datanasc">
                         </div>
                     </div>
 
                     <div class="form-row">
-                        <div class="form-group col-md-8">
-                            <label for="endereco">Endereço</label>
-                            <input type="text" class="form-control" id="endereco" placeholder="Logradouro">
-                        </div>
                         <div class="form-group col-md-4">
                             <label for="Cep">CEP</label>
-                            <input type="text" class="form-control" id="Cep" placeholder="CEP">
+                            <input type="text" class="form-control" name="usuario.Cep" placeholder="CEP">
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" placeholder="Logradouro" readonly>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="cidade">Cidade</label>
-                            <input type="text" class="form-control" id="cidade">
+                            <input type="text" class="form-control" readonly>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="estado">Estado</label>
-                            <select id="Estado" class="form-control">
-                                <option selected>Selecione</option>
-                                <option>Rio Grande do Sul</option>
-                                <option>Santa Catarina</option>
-                                <option>Paraná</option>
-                                <option>São Paulo</option>
-                                <option>Minas Gerais</option>
-                                <option>Mato Grosso do Sul</option>
-                                <option>Rio de Janeiro</option>
-                                <option>Espírito Santo</option>
-                                <option>Goiás</option>
-                                <option>Mato Grosso</option>
-                                <option>Bahia</option>
-                                <option>Tocantins</option>
-                                <option>Rondônia</option>
-                                <option>Piauí</option>
-                                <option>Maranhão</option>
-                                <option>Ceará</option>
-                                <option>Rio Grande do Norte</option>
-                                <option>Paraíba</option>
-                                <option>Pernambuco</option>
-                                <option>Alagoas</option>
-                                <option>Sergipe</option>
-                                <option>Pará</option>
-                                <option>Amapá</option>
-                                <option>Roraima</option>
-                                <option>Amazonas</option>
-                                <option>Acre</option>
-                                <option>Distrito Federal</option>
-                            </select>
+                            <input type="text" class="form-control" readonly>
                         </div>
                         <div class="form-group col-md-2">
                             <label for="num">Número</label>
-                            <input type="number" class="form-control" id="num">
+                            <input type="number" class="form-control" name="usuario.Numero">
                         </div>
                     </div>
 

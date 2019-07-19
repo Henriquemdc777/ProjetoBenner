@@ -12,7 +12,8 @@ namespace medicamentos.Models
         public string Cpf { get; set; }
         public DateTime Datanasc { get; set; }
         public string Senha { get; set; }
-        public int EnderecoId { get; set; }
+        public string Cep { get; set; }
+        public int Numero { get; set; }
         public IList<Medicacao> Medicacoes { get; set; }
         public IList<Receita> Receitas { get; set; }
     }
