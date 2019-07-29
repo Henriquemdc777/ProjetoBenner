@@ -13,8 +13,9 @@ namespace medicamentos.Models
         public int Crm { get; set; }
         public DateTime Datanasc { get; set; }
         public string Senha { get; set; }
+        public Secretaria Secretaria { get; set; }
+        public IList<Consulta> Agenda { get; set; }
         public string Descricao { get; set; }
         public string Especialidade { get; set; }
-        public int EnderecoId { get; set; }
     }
 } 

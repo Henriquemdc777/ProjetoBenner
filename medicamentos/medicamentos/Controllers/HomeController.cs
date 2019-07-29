@@ -1,4 +1,5 @@
-﻿using System;
+﻿using medicamentos.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,11 +12,12 @@ namespace medicamentos.Controllers
         // GET: Home
         public ActionResult Usuario()
         {
-            ViewBag.Title = Session["UsuarioLogado"];
+            ViewBag.Usuario = Session["UsuarioLogado"];
             return View();
         }
         public ActionResult Medico()
         {
+            ViewBag.Medico = Session["UsuarioLogado"];
             return View();
         }
     }

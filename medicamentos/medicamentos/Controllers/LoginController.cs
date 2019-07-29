@@ -1,9 +1,6 @@
 ﻿using medicamentos.DAO;
 using medicamentos.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace medicamentos.Controllers
@@ -25,10 +22,23 @@ namespace medicamentos.Controllers
             MedicamentosContext contexto = new MedicamentosContext();
             UsuarioDAO usuarioDAO = new UsuarioDAO();
             usuarioDAO.Adicionar(usuario);
-            contexto.SaveChanges();
             return RedirectToAction("index");
         }
-        
+        public ActionResult CadastroMedico(Medico medico)
+        {
+            MedicamentosContext contexto = new MedicamentosContext();
+            MedicoDAO medicoDAO = new MedicoDAO();
+            medicoDAO.Adicionar(medico);
+            return RedirectToAction("index");
+        }
+        public ActionResult CadastroSecretaria(Secretaria secretaria)
+        {
+            MedicamentosContext contexto = new MedicamentosContext();
+            SecretariaDAO secretariaDAO = new SecretariaDAO();
+            secretariaDAO.Adicionar(secretaria);
+            return RedirectToAction("index");
+        }
+
         public ActionResult Autentica(String CPF, String senha)
         {
             UsuarioDAO dao = new UsuarioDAO();

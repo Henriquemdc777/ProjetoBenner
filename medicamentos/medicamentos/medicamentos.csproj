@@ -230,6 +230,7 @@
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\jquery-3.4.1.min.js" />
     <Content Include="Content\js\popper.min.js" />
+    <Content Include="Content\js\Validacoes.js" />
     <Content Include="Content\wallpaper.jpg" />
     <Content Include="Content\wallpaper2.jpg" />
     <Content Include="Global.asax" />
@@ -239,6 +240,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="DAO\HorarioDAO.cs" />
     <Compile Include="DAO\MedicamentoDAO.cs" />
     <Compile Include="DAO\MedicamentosContext.cs" />
     <Compile Include="DAO\MedicoDAO.cs" />
@@ -259,6 +261,7 @@
       <DependentUpon>20190719200159_1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\MedicamentosContextModelSnapshot.cs" />
+    <Compile Include="Models\Consulta.cs" />
     <Compile Include="Models\Medicacao.cs" />
     <Compile Include="Models\Medicamento.cs" />
     <Compile Include="Models\Medico.cs" />

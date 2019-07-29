@@ -1,33 +1,129 @@
-﻿
-<script type="text/javascript" src="~/Scripts/jquery-1.10.2.js"></script>
-<script type="text/javascript">
-    function decrementa(produtoId) {
-        var url = "@Url.Action("DecrementaQtd", "Produto")";
-        var params = { id: produtoId };
-        $.post(url, params, atualiza);
-    }
+﻿<nav class="navbar navbar-expand-lg navbar-light header">
+    <a class="navbar-brand" href="#">
+        <img src="~/Content/benner.png" alt="Benner Life@Live" style="border-radius:3px;margin-left:25px;" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-    function atualiza(resposta) {
-        var elemento = $("#quantidade" + resposta.Id);
-        elemento.html(resposta.Quantidade);
-    }
-</script>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-@Model IList<medicamentos.Models.Medicamento>
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Unidade</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var medicamento in Model)
-        {
-            <tr>
-                <td>@medicamento.Nome</td>
-                <td>@Unidade</td>
-            </tr>
-        }
-    </tbody>
-</table>
+
+
+        <ul class="navbar-nav ml-auto mr-5">
+
+
+
+            <li class="nav-item">
+                @Html.ActionLink("Usuários", "Index", "Usuario", new object { }, new { @class = "nav-link", @style = "color:white;" })
+            </li>
+            <li class="nav-item">
+                @Html.ActionLink("Usuários", "Index", "Usuario", new object { }, new { @class = "nav-link", @style = "color:white;" })
+            </li>
+            <li class="nav-item">
+                @Html.ActionLink("Usuários", "Index", "Usuario", new object { }, new { @class = "nav-link", @style = "color:white;" })
+            </li>
+
+
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+                    @ViewBag.Usuario.Nome
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Editar Dados</a>
+                    <a class="dropdown-item" href="#">Alterar Senha</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Sair</a>
+                </div>
+            </li>
+        </ul>
+
+
+
+    </div>
+</nav>
+<div class="menu-lateral">
+    <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+        Nova Receita
+    </button>
+    <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+        Corrigir Receita
+    </button>
+    <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+        Nova Receita
+    </button>
+    <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+        Nova Receita
+    </button>
+</div>
+
+<div class="conteudo">
+    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="Agenda-tab" data-toggle="tab" href="#Agenda" role="tab" aria-controls="Agenda" aria-selected="true">Agenda</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="Agenda" role="tabpanel" aria-labelledby="agenda-tab">
+            <div class="tab-conteudo">
+                <div class="agenda">
+                    <table class="table bg-light" style="background-color:#467cd0;">
+                        <thead>
+                            <tr>
+                                <th>Paciente</th>
+                                <th>Horário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>paciente 1</th>
+                                <th>00:00</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+    </div>
+
+</div>
+
+
+<div class="footer">&copy; Henrique Medeiros da Costa</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <form class="form-signin">
+                        <img class="mb-4" src="./Signin Template · Bootstrap_files/bootstrap-solid.svg" alt="" width="72" height="72">
+                        <h1 class="h3 mb-3 font-weight-normal text-center">Lorem Ipsum Dolor</h1>
+                        <label for="inputEmail" class="sr-only text-center">Email address</label>
+                        <input type="email" id="inputEmail" class="form-control" required="" autofocus="">
+                        <label for="inputPassword" class="sr-only text-center">Password</label>
+                        <input type="password" id="inputPassword" class="form-control" required="">
+                        <p class="mt-5 mb-3 text-muted">© 2017-2019</p>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
